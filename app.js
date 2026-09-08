@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. OFFICIAL PAYHIP CHECKOUT LINKS
   const CHECKOUT_CONFIG = {
     standardBundleUrl37: 'https://payhip.com/b/lrapH',
-    downsellFlashUrl27:  'https://payhip.com/b/lrapH?coupon=FLASH10',
+    downsellFlashUrl27:  'https://payhip.com/b/QziT9',
   };
 
   // 2. STICKY CHECKOUT BAR
