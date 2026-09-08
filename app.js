@@ -1,15 +1,14 @@
 /**
  * The Cortisol Paradox — Sales Funnel Interactive Controller
- * Features: Exit-Intent Modal, 30-Minute Live Countdown, Sticky Bar, FAQ Accordion
+ * Features: Payhip Checkout Integration, Exit-Intent Modal, 30-Minute Live Countdown, Sticky Bar, FAQ Accordion
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. CONFIGURATION: Set your checkout URLs here
+  // 1. OFFICIAL PAYHIP CHECKOUT LINKS
   const CHECKOUT_CONFIG = {
-    // Replace with your Stripe Payment Link, PayPal URL, or LemonSqueezy link:
-    standardBundleUrl37: '#checkout-37', // e.g., 'https://buy.stripe.com/your_37_link'
-    downsellFlashUrl27: '#checkout-27',  // e.g., 'https://buy.stripe.com/your_27_link'
+    standardBundleUrl37: 'https://payhip.com/b/lrapH',
+    downsellFlashUrl27:  'https://payhip.com/b/lrapH?coupon=FLASH10',
   };
 
   // 2. STICKY CHECKOUT BAR
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (questionBtn) {
       questionBtn.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        // Close others
         faqItems.forEach(other => other.classList.remove('active'));
         if (!isActive) {
           item.classList.add('active');
@@ -49,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let expiryTime = localStorage.getItem(STORAGE_KEY);
 
   if (!expiryTime || isNaN(expiryTime) || Number(expiryTime) < Date.now()) {
-    // Set 30 minutes from now
     expiryTime = Date.now() + 30 * 60 * 1000;
     localStorage.setItem(STORAGE_KEY, expiryTime);
   }
@@ -88,14 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Desktop Mouse Leave Intent (when cursor moves towards top tabs/address bar)
+  // Desktop Mouse Leave Intent
   document.addEventListener('mouseleave', (e) => {
     if (e.clientY <= 20) {
       openExitModal();
     }
   });
 
-  // Mobile / Inactive Fallback: Trigger after 75 seconds if not yet shown
+  // Mobile / Inactive Fallback
   setTimeout(() => {
     openExitModal();
   }, 75000);
@@ -125,25 +122,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. CHECKOUT BUTTON CLICKS
+  // 6. CONNECT REAL PAYHIP CHECKOUT URLS DYNAMICALLY
   const standardButtons = document.querySelectorAll('.trigger-checkout-37');
   standardButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      if (CHECKOUT_CONFIG.standardBundleUrl37 === '#checkout-37') {
-        e.preventDefault();
-        alert("Payment Link Placeholder:\n\nTo connect real payments, replace 'CHECKOUT_CONFIG.standardBundleUrl37' in app.js with your Stripe or PayPal Payment link ($37).");
-      }
-    });
+    btn.href = CHECKOUT_CONFIG.standardBundleUrl37;
   });
 
   const downsellButtons = document.querySelectorAll('.trigger-checkout-27');
   downsellButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      if (CHECKOUT_CONFIG.downsellFlashUrl27 === '#checkout-27') {
-        e.preventDefault();
-        alert("Flash Downsell Link Placeholder:\n\nTo connect real payments, replace 'CHECKOUT_CONFIG.downsellFlashUrl27' in app.js with your Stripe or PayPal Payment link ($27).");
-      }
-    });
+    btn.href = CHECKOUT_CONFIG.downsellFlashUrl27;
   });
 
 });
