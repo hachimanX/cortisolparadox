@@ -396,18 +396,6 @@ a.payhip-buy-button.btn-secondary:hover {
   line-height: 1.5;
 }
 
-.sample-line {
-  margin: 8px 0 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.sample-line a {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--teal-deep);
-}
-
 .disclaimer {
   font-size: 1rem;
   font-style: normal;
@@ -417,28 +405,16 @@ a.payhip-buy-button.btn-secondary:hover {
   margin: 12px 0 0;
 }
 
-.placeholder-note {
-  background: var(--amber-light);
-  color: var(--amber-text);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 12px 0 0;
-}
-
 /* Inside */
 section.inside-section,
 section.diagram-section,
 section.offer-section,
 section.refund-section,
-section.signup-section,
 section.faq-section {
   padding: 72px 0;
 }
 
-section.diagram-section,
-section.signup-section {
+section.diagram-section {
   background: var(--white);
 }
 
@@ -449,8 +425,7 @@ section.signup-section {
 }
 
 .section-intro h2,
-.refund-card h2,
-.signup-card h2 {
+.refund-card h2 {
   font-family: var(--font-heading);
   font-size: clamp(1.6rem, 2.6vw, 2.15rem);
   color: var(--navy-deep);
@@ -476,8 +451,7 @@ section.signup-section {
 .comp-card,
 .choice-card,
 .diagram-showcase,
-.refund-card,
-.signup-card {
+.refund-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -555,49 +529,6 @@ section.signup-section {
   color: var(--amber-text);
   font-size: 1.15rem;
   font-weight: 600;
-}
-
-/* Email signup */
-.signup-card {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.signup-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.signup-row {
-  display: flex;
-  gap: 12px;
-  align-items: stretch;
-}
-
-.signup-row input[type="email"] {
-  flex: 1;
-  width: 100%;
-  min-width: 0;
-  font: inherit;
-  font-size: 1rem;
-  min-height: 48px;
-  padding: 12px 14px;
-  border: 1px solid #94A3B8;
-  border-radius: var(--radius-sm);
-  color: var(--charcoal);
-  background: var(--white);
-}
-
-.signup-row .btn-primary {
-  width: auto;
-  white-space: nowrap;
-}
-
-.signup-privacy {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: var(--charcoal);
 }
 
 /* FAQ */
@@ -691,6 +622,14 @@ footer.site-footer {
 
 .footer-links a:hover {
   color: #FFFFFF;
+}
+
+.footer-contact {
+  color: #F8FAFC;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0 auto 16px;
+  max-width: 40rem;
 }
 
 .footer-publisher {
@@ -826,25 +765,15 @@ a.payhip-buy-button.sticky-btn {
   margin-bottom: 6px;
 }
 
-.template-note {
-  background: var(--amber-light);
-  color: var(--amber-text);
-  padding: 14px 16px;
-  border-radius: var(--radius-sm);
-  margin-top: 28px;
-}
-
 @media (max-width: 860px) {
   .hero-grid,
   .comparison-grid,
   .choice-grid,
-  .signup-row,
   .sticky-inner {
     grid-template-columns: 1fr;
     display: grid;
   }
 
-  .signup-row .btn-primary,
   .sticky-btn,
   a.payhip-buy-button.sticky-btn,
   .nav-cta-btn {
@@ -856,7 +785,6 @@ a.payhip-buy-button.sticky-btn {
   section.diagram-section,
   section.offer-section,
   section.refund-section,
-  section.signup-section,
   section.faq-section {
     padding: 48px 0;
   }
@@ -865,7 +793,6 @@ a.payhip-buy-button.sticky-btn {
   .choice-card,
   .diagram-showcase,
   .refund-card,
-  .signup-card,
   .buy-box {
     padding: 20px;
   }
