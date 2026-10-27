@@ -422,6 +422,19 @@ a.payhip-buy-button.btn-secondary:hover {
   color: var(--navy-deep);
 }
 
+.refund-line {
+  margin: 12px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.refund-line a {
+  color: var(--teal-deep);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .gets {
   margin: 14px 0 0;
   font-size: 1rem;
@@ -636,6 +649,12 @@ section.signup-section {
   padding: 14px 16px;
   border-radius: var(--radius-sm);
   margin: 12px 0 16px;
+}
+
+.refund-rule a {
+  color: var(--amber-text);
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 /* Email signup */
