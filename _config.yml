@@ -1,0 +1,17 @@
+# GitHub Pages builds this site with Jekyll. Folders listed here are not
+# published. _articles/ is also skipped because its name starts with _.
+# Do not add a .nojekyll file: that would publish the article sources.
+exclude:
+  - scripts
+  - docs
+  - _articles
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

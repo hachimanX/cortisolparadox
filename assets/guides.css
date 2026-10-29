@@ -1,0 +1,103 @@
+/* Guides index and article pages. Loaded after styles.css. */
+
+body.article-page {
+  padding-bottom: 0;
+}
+
+.article-wrap {
+  max-width: 50rem;
+}
+
+.article-kicker {
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+
+.article-body h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--navy-deep);
+  line-height: 1.25;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.article-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--navy-deep);
+  line-height: 1.35;
+  margin: 22px 0 8px;
+}
+
+.article-body {
+  overflow-wrap: break-word;
+}
+
+.article-body li {
+  margin-bottom: 10px;
+}
+
+.article-body span[data-guide] {
+  color: inherit;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-body table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  background: var(--white);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.article-body th,
+.article-body td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  background: var(--teal-light);
+  color: var(--navy-deep);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+ul.guide-index {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.guide-index li {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--teal-bio);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  margin: 0 0 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.guide-index h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+
+.guide-index p {
+  margin: 0;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
