@@ -2,7 +2,56 @@
    The Cortisol Paradox — sales page
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+/* Latin subsets of the weights this site uses. Licenses: assets/fonts/OFL-Inter.txt and assets/fonts/OFL-PlusJakartaSans.txt. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonts/inter-latin-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/inter-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('assets/fonts/inter-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/inter-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('assets/fonts/plus-jakarta-sans-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/plus-jakarta-sans-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('assets/fonts/plus-jakarta-sans-latin-800.woff2') format('woff2');
+}
 
 :root {
   --navy-deep: #0A192F;
@@ -863,4 +912,32 @@ a.payhip-buy-button.sticky-btn {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .sticky-checkout-bar { transition: none; }
+}
+
+/* Pin the footer to the bottom of the viewport when the page is shorter
+   than the screen. Taller pages keep normal flow. The homepage still has
+   its bottom padding so the fixed buy bar does not cover the footer. */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .top-banner,
+body > header.site-nav,
+body > footer.site-footer {
+  flex-shrink: 0;
+}
+
+body > main {
+  flex: 1 0 auto;
+}
+
+body > footer.site-footer {
+  margin-top: auto;
+}
+
+body:not(:has(.sticky-checkout-bar)) {
+  padding-bottom: 0;
 }
