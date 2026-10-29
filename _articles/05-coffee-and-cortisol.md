@@ -23,7 +23,7 @@ In plain terms: if you drink coffee every day, your morning cup probably does le
 
 ## Coffee on an empty stomach and cortisol
 
-This is one of the most repeated claims, and we couldn't find a study that tested it directly. The study usually linked to it measured something else. In a 2020 crossover trial of 29 adults, Smith and colleagues found that strong black coffee after a night of broken sleep raised the blood sugar response to a sugary breakfast drink ([Smith et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32475359/)). That's about blood sugar after poor sleep. It didn't measure cortisol.
+This is one of the most repeated claims, and we couldn't find a study that tested it directly. The study usually linked to it measured something else. In a 2020 crossover trial of 29 adults, Smith and colleagues found that strong black coffee after a night of broken sleep raised the blood sugar response to a sugary breakfast drink ([Smith et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32475359/)). It reported blood sugar and insulin after poor sleep, not cortisol.
 
 So if coffee on an empty stomach upsets your stomach or leaves you jittery, it's reasonable to have it with or after food. Just know that the "empty stomach cortisol spike" isn't something the research has shown.
 

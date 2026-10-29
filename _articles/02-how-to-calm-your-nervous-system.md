@@ -64,7 +64,7 @@ Talk to a doctor or a mental health professional if:
 - You feel anxious, on edge or low most days for two weeks or more.
 - You have panic attacks, chest pain or a racing heart that worries you.
 - Stress is affecting your sleep, work or relationships.
-- You're thinking about harming yourself. In the US, call or text 988 to reach the Suicide & Crisis Lifeline.
+- If you're struggling to cope or thinking about harming yourself, get help now: in the US call or text 988; in the UK or Ireland call Samaritans on 116 123; elsewhere, call your local emergency number or find a helpline at findahelpline.com.
 
 ## FAQ
 

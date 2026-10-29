@@ -65,7 +65,7 @@ Talk to a doctor or mental health professional if:
 - You feel anxious, low, numb or on edge most days for two weeks or more.
 - You've been through trauma and it's affecting daily life.
 - You have panic attacks, or physical symptoms like a racing heart or chest pain.
-- You're thinking about harming yourself. In the US, call or text 988.
+- If you're struggling to cope or thinking about harming yourself, get help now: in the US call or text 988; in the UK or Ireland call Samaritans on 116 123; elsewhere, call your local emergency number or find a helpline at findahelpline.com.
 
 ## FAQ
 

@@ -30,7 +30,7 @@ So if you check the clock at 3am, your cortisol is probably already on its way u
 
 The pattern most people describe, waking around 3am with a racing mind, fits hyperarousal better than a single hormone spike. Cortisol may add to it, but the research doesn't show that a "3am spike" is the cause.
 
-## How to lower cortisol before bed (and what may help with night waking)
+## Can you lower cortisol before bed? What may help with night waking
 
 People search for "how to reduce a cortisol spike at 3am." No habit has been shown to stop the normal night-time rise, and you wouldn't want it to. What may help is making the evening calmer and making it easier to get back to sleep.
 
@@ -40,7 +40,7 @@ People search for "how to reduce a cortisol spike at 3am." No habit has been sho
 - **Get up if you can't get back to sleep.** The American Academy of Sleep Medicine suggests stimulus control for chronic insomnia, which means leaving the bed when you can't sleep and returning when sleepy, as part of an approach led by cognitive behavioral therapy for insomnia (CBT-I) ([Edinger et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/)).
 - **Don't watch the clock.** Checking the time tends to add worry. This is common advice in insomnia care rather than something with its own trial.
 
-*The Cortisol Paradox* gives the evening part of its 21-day routine a wind-down checklist: dim the lights, screens away, a warm drink, breathing, one notebook line, lights out. [See the evening routine in the 21-day plan](https://cortisolparadox.com#offer).
+*The Cortisol Paradox* gives the evening part of its 21-day routine a wind-down checklist: dim the lights, cool the bedroom, a caffeine-free warm drink, screens away, then ten minutes of slow breathing and a supported resting pose. [See the evening routine in the 21-day plan](https://cortisolparadox.com#offer).
 
 ## When to see a doctor
 
