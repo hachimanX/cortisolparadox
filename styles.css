@@ -913,3 +913,31 @@ a.payhip-buy-button.sticky-btn {
   html { scroll-behavior: auto; }
   .sticky-checkout-bar { transition: none; }
 }
+
+/* Pin the footer to the bottom of the viewport when the page is shorter
+   than the screen. Taller pages keep normal flow. The homepage still has
+   its bottom padding so the fixed buy bar does not cover the footer. */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .top-banner,
+body > header.site-nav,
+body > footer.site-footer {
+  flex-shrink: 0;
+}
+
+body > main {
+  flex: 1 0 auto;
+}
+
+body > footer.site-footer {
+  margin-top: auto;
+}
+
+body:not(:has(.sticky-checkout-bar)) {
+  padding-bottom: 0;
+}
